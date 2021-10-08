@@ -60,7 +60,7 @@ function App() {
     const cityName = e.target.elements.city.value;
     if(cityName){
     const api_call = await fetch(
-      `http://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${API_KEY}`
+      `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${API_KEY}`
     );
     const response = await api_call.json();
 
